@@ -3,6 +3,7 @@ import { ArrowCircleDown, ArrowCircleUp, X } from 'phosphor-react'
 import { Controller, useForm } from 'react-hook-form'
 import * as z from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
+import React, { useContext, memo } from 'react'
 
 import {
   CloseButton,
@@ -13,7 +14,7 @@ import {
 } from './styles'
 import { api } from '../../lib/axios'
 import { TransactionsContext } from '../../contexts/TransactionsContext'
-import { useContext } from 'react'
+import { useContextSelector } from 'use-context-selector'
 
 const newTransactionFormSchema = z.object({
   description: z.string(),
@@ -25,7 +26,12 @@ const newTransactionFormSchema = z.object({
 type MewTransactionFormInputs = z.infer<typeof newTransactionFormSchema>
 
 export function NewTransactionModal() {
-  const { createTransaction } = useContext(TransactionsContext)
+  const createTransaction = useContextSelector(
+    TransactionsContext,
+    (context) => {
+      return context.createTransaction
+    },
+  )
   const {
     control,
     reset,
@@ -50,6 +56,7 @@ export function NewTransactionModal() {
     // })
     await createTransaction({ description, category, type, price })
     reset()
+    // setOpen(false)
   }
   return (
     <Dialog.Portal>
@@ -97,6 +104,7 @@ export function NewTransactionModal() {
               )
             }}
           />
+
           <button type="submit" disabled={isSubmitting}>
             Cadastrar
           </button>

@@ -39,6 +39,54 @@
       "type": "outcome",
       "createdAt": "2022-12-11T00:29:42.775Z",
       "id": 5
+    },
+    {
+      "description": "sdasd",
+      "category": "Trampo",
+      "price": 2344,
+      "type": "income",
+      "createdAt": "2022-12-11T01:18:43.898Z",
+      "id": 6
+    },
+    {
+      "description": "ssdasdas",
+      "category": "Vendas",
+      "price": 3433,
+      "type": "income",
+      "createdAt": "2022-12-11T02:36:35.968Z",
+      "id": 7
+    },
+    {
+      "description": "sadsads",
+      "category": "Dasdsadas",
+      "price": 342,
+      "type": "outcome",
+      "createdAt": "2022-12-11T02:43:48.372Z",
+      "id": 8
+    },
+    {
+      "description": "ghbjhgjh",
+      "category": "ghjgjh",
+      "price": 45,
+      "type": "income",
+      "createdAt": "2022-12-11T02:45:05.234Z",
+      "id": 9
+    },
+    {
+      "description": "dsfdsf",
+      "category": "sdfsdfsdf",
+      "price": 23,
+      "type": "income",
+      "createdAt": "2022-12-11T03:08:19.251Z",
+      "id": 10
+    },
+    {
+      "description": "sadasdas",
+      "category": "fsdfsdf",
+      "price": 234,
+      "type": "income",
+      "createdAt": "2022-12-11T03:47:59.790Z",
+      "id": 11
     }
   ]
 }
