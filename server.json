@@ -1,28 +1,44 @@
 {
-    "transactions": [
-        {
-            "id": 1,
-            "description": "Desenvolvimento de WebSite",
-            "type": "income",
-            "category": "Venda",
-            "price": 14000,
-            "createdAt": "2022-12-10T01:47:27.942Z"
-        },
-        {
-            "id": 2,
-            "description": "Hamburguer",
-            "type": "outcome",
-            "category": "Alimentação",
-            "price": 50,
-            "createdAt": "2022-12-09T01:10:27.942Z"
-        },
-        {
-            "id": 3,
-            "description": "Ignite ",
-            "type": "outcome",
-            "category": "Educação",
-            "price": 1980,
-            "createdAt": "2022-12-07T01:10:27.942Z"
-        }
-    ] 
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de WebSite",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createdAt": "2022-12-10T01:47:27.942Z"
+    },
+    {
+      "id": 2,
+      "description": "Hamburguer",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 50,
+      "createdAt": "2022-12-09T01:10:27.942Z"
+    },
+    {
+      "description": "Pizza",
+      "category": "Alimentaçao",
+      "price": 50,
+      "type": "outcome",
+      "createdAt": "2022-12-11T00:27:29.499Z",
+      "id": 3
+    },
+    {
+      "description": "Batata Frita",
+      "category": "Alimentação",
+      "price": 4,
+      "type": "outcome",
+      "createdAt": "2022-12-11T00:28:06.888Z",
+      "id": 4
+    },
+    {
+      "description": "Esfirra de Carne",
+      "category": "Alimentação",
+      "price": 4,
+      "type": "outcome",
+      "createdAt": "2022-12-11T00:29:42.775Z",
+      "id": 5
+    }
+  ]
 }
